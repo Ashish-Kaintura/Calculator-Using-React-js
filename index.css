@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgb(255, 31, 68);
+}
+.title{
+  margin-top:8px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+.title:hover{
+  opacity: 0.8;
+  color: rgb(77, 50, 252);
+}
+.App{
+display:flex;
+padding: 50px 50px;
+text-align: center;
+justify-content: center;
+margin: 132px 50px 50px 50px;
+}
+.calculator{
+  width: 23vw;
+  overflow: hidden;
+ border-radius: 22px 22px;
+}
+.display{
+  text-align: right;
+  background-color:black;
+  color: white;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.display span{
+  font-size: 24px;
+  color: grey;
+}
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 19px;
+  cursor: pointer;
+  color: #fff;
+
+}
+.operators{
+  text-align: left;
+  display: flex;
+}
+.operators button{
+  flex: 1 1 0%;
+  background-color:rgb(71, 71, 255);
+  font-weight: bold;
+}
+
+.digits{
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button{
+  flex: 1 1 33.333%;
+  max-width:33.333% ;
+  background-color: black;
+}
+button:hover{
+  opacity: 0.7;
+}
+@media screen and (max-width:391px) {
+  
+
+  .App{
+    padding: 50px 40px;
+    margin: 125px 24px 76px 30px;
+}
+button {
+  
+  padding: 17px;
+ 
+}
+.calculator {
+  width: 71vw;
+  overflow: hidden;
+  border-radius: 22px 22px;
+}
+  }
